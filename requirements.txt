@@ -1,0 +1,9 @@
+pandas
+numpy
+matplotlib
+seaborn
+python-box
+ensure
+pyYAML
+Flask
+-e .
