@@ -21,6 +21,7 @@ class DataIngestion:
 
     def save_data(self):
          try:
+            info_logger.info("Data Ingestion Component started")
             status = False
 
             data_file_path = os.path.join(self.config.data_dir,"advertising_data.csv")
@@ -31,7 +32,7 @@ class DataIngestion:
                 with open(self.config.STATUS_FILE, "w") as f:
                         f.write(f"Data Ingestion status: {status}")
 
-                info_logger.info(f"Data Ingestion Complete successfully: {status}")
+            info_logger.info(f"Data Ingestion Component Complete")
          except Exception as e:
                with open(self.config.STATUS_FILE, "w") as f:
                   f.write(f"Data Ingestion status: {status}")
