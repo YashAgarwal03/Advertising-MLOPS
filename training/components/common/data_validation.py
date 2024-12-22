@@ -14,7 +14,7 @@ class DataValidation:
     def __init__(self, config: DataValidationConfig):
         self.config = config
 
-    def validata_data(self):
+    def validate_data(self):
         """
         Validate the columns names and dtypes of ingested data
         """
@@ -57,4 +57,4 @@ if __name__ == "__main__":
     data_validation_config = config.get_data_validation_config()
 
     data_validation = DataValidation(config = data_validation_config)
-    data_validation.validata_data()
+    data_validation.validate_data()
