@@ -15,7 +15,7 @@ obj = DataValidationPipeline()
 obj.main()
 info_logger.info(f">>>>>>>> {PIPELINE} completed <<<<<<<<<")
 
-PIPELINE = "Data Validation Pipeline"
+PIPELINE = "Cross Validation Pipeline"
 info_logger.info(f">>>>> {PIPELINE} started <<<<")
 obj = CrossValPipeline()
 obj.main()
